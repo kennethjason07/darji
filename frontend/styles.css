@@ -656,3 +656,16 @@ footer {
     height: 100px;
     width: 100px;
 }
+
+
+#addworker {
+    display: inline ;
+    margin-left: 900px;
+}
+
+#addworker button{
+    background-color: coral;
+    height: 40px;
+    width: 90px;
+    border-radius: 12px;
+}

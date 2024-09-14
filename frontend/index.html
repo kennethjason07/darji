@@ -14,7 +14,7 @@
                     <div>
                         <!-- <img src="https://assets.codepen.io/285131/untitled-ui-icon.svg" alt="Logo Icon" /> -->
 
-                        <img src="/logo.png" alt="Logo Icon" />
+                        <img src="/frontend/logo.png" alt="Logo Icon" />
                     </div>
                     <!-- <h2>Starset Consultancy Services.</h2> -->
                 </a>
@@ -206,7 +206,7 @@
                         </div>
 
                         <div class="form-column2">
-                            <div class="bill-logo"><img src="/Shop.jpeg" alt="log" ></div>
+                            <div class="bill-logo"><img src="/frontend/Shop.jpeg" alt="log" ></div>
                             <h2>Customer Information</h2>
 
                             <div id="customercontent">
@@ -217,10 +217,7 @@
 
                            
                             <label for="customer-name">Customer Name:</label>
-                            <input type="text" id="customer-name" name="customer_name" required>
-
-                            <label for="order-num">order no:</label>
-                            <input type="number" id="order-num" name="order_num" required>  
+                            <input type="text" id="customer-name" name="customer_name" required> 
                             
 
                             <label for="mobile-number">Mobile Number:</label>
@@ -347,10 +344,38 @@
                 </div>
                 <div id="workers" class="content-main hidden">
                     <h2>Workers</h2>
-        <div id="worker-list">
-            <!-- Worker Profiles will be dynamically inserted here -->
-        </div>
-                </div>
+                    <div id="worker-list">
+                        <label for="worker-name">Worker Name:</label>
+<select id="worker-name" name="worker_name" required onchange="fetchWorkerInfo(this.value)">
+    <option value="" disabled selected>Select a worker</option>
+                                    <option value="Worker 1">Worker 1</option>
+                                    <option value="Worker 2">Worker 2</option>
+                                    <option value="Worker 3">Worker 3</option>
+                                    <option value="Worker 4">Worker 4</option>
+                                    <option value="Worker 5">Worker 5</option>
+                                    <option value="Worker 6">Worker 6</option>
+                                    <option value="Worker 7">Worker 7</option>
+                                    <option value="Worker 8">Worker 8</option>
+                                    <option value="Worker 9">Worker 9</option>
+                                    <option value="Worker 10">Worker 10</option>
+                                    <option value="Worker 11">Worker 11</option>
+                                    <option value="Worker 12">Worker 12</option>
+                                    <option value="Worker 13">Worker 13</option>
+                                    <option value="Worker 14">Worker 14</option>
+                                    <option value="Worker 15">Worker 15</option>
+                                    <option value="Worker 16">Worker 16</option>
+</select>
+<div id="addworker">
+    <button>add worker</button>
+</div>
+    <div id="workerinfo">
+
+    </div>
+
+                        <!-- Worker Profiles will be dynamically inserted here -->
+                    </div>
+
+                    </div>
 
             </div>
         </div>
